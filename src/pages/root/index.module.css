@@ -1,0 +1,27 @@
+.container {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	height: 100vh;
+	overflow: hidden;
+
+	@media (--media-lg) {
+		grid-template-columns: auto 1fr;
+		grid-template-rows: unset;
+	}
+}
+
+.navigation {
+	display: flex;
+	background-color: var(--colorBgDark);
+	gap: 12px;
+	padding: 12px;
+
+	@media (--media-lg) {
+		flex-direction: column;
+		padding: 24px;
+	}
+}
+
+.mainBox {
+	overflow: hidden;
+}

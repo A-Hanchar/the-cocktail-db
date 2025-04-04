@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text /> SHOULD match snapshot 1`] = `
+<DocumentFragment>
+  <h1
+    class="ui-text color-base size-16px"
+    data-test-id="text"
+  />
+</DocumentFragment>
+`;

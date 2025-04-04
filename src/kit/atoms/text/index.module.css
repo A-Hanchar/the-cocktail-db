@@ -1,0 +1,26 @@
+.uppercase {
+	text-transform: uppercase;
+}
+
+/* prettier-ignore */
+@each $colorName, $colorValue in (base, light, negative, yellow, inherit, currentColor),
+  (var(--colorBase), var(--colorLight), var(--colorNegative), var(--colorYellow), inherit, currentColor) {
+  .color-$(colorName) {
+    color: $colorValue;
+  }
+}
+
+/* prettier-ignore */
+@each $weight in (100, 200, 300, 400, 500, 600, 700, 800, 900) {
+  .weight-$(weight) {
+    font-weight: $weight;
+  }
+}
+
+/* prettier-ignore */
+@each $sizeName, $sizeValue in (36px, 24px, 16px),
+  (2rem, 1.5rem, 1rem) {
+  .size-$(sizeName) {
+    font-size: $sizeValue;
+  }
+}

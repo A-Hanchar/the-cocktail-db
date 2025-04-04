@@ -1,0 +1,89 @@
+.container {
+	display: grid;
+	gap: 12px;
+
+	@media (--media-lg) {
+		gap: 24px;
+		padding: 24px;
+	}
+}
+
+.cardContainer {
+	display: grid;
+	grid-template-columns: 1fr;
+	position: relative;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: rgba(255, 255, 255, 0.75);
+		position: absolute;
+		z-index: 1;
+	}
+
+	& .description {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		grid-row: 1;
+		grid-column: 1;
+		z-index: 2;
+		padding: 12px;
+	}
+
+	& .descriptionBlock {
+		& ul {
+			margin: unset;
+		}
+	}
+
+	& img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		grid-row: 1;
+		grid-column: 1;
+		z-index: 1;
+		position: absolute;
+	}
+
+	@media (--media-lg) {
+		grid-template-columns: 1fr 500px;
+		gap: 24px;
+		align-items: center;
+
+		&::after {
+			content: unset;
+		}
+
+		& .description {
+			grid-row: unset;
+			grid-column: unset;
+			padding: unset;
+			z-index: unset;
+		}
+
+		& img {
+			width: 250px;
+			height: 250px;
+			border-radius: 6px;
+			transition: scale 0.3s;
+			grid-row: unset;
+			grid-column: unset;
+			z-index: unset;
+			position: unset;
+
+			&:hover {
+				scale: 1.15;
+			}
+		}
+	}
+}
+
+.divider {
+	width: 100%;
+	height: 1px;
+	background-color: var(--colorBgDark);
+}

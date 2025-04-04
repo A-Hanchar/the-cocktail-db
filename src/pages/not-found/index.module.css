@@ -1,0 +1,15 @@
+.container {
+	padding: 24px;
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	grid-template-rows: auto 1fr;
+	overflow: hidden;
+	height: 100%;
+
+	& img {
+		width: auto;
+		height: 65%;
+		object-fit: contain;
+	}
+}

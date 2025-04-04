@@ -1,0 +1,33 @@
+.button {
+	all: unset;
+	display: inline-flex;
+	text-decoration: none;
+	position: relative;
+	box-sizing: border-box;
+	user-select: none;
+	transition: border-color 0.3s;
+	cursor: pointer;
+	outline: none;
+	appearance: none;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-inline: 12px;
+	overflow: visible;
+	border: none;
+	background-color: transparent;
+	justify-content: center;
+	border-style: solid;
+	border-color: var(--colorNegative);
+	border-width: 1px;
+	border-radius: 4px;
+
+	&:hover:not(.disabled) {
+		border-color: var(--colorNegativeHover);
+	}
+
+	@media (--media-lg) {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-inline: 24px;
+	}
+}

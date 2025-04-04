@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NotFound /> SHOULD match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="box container"
+    data-test-id="box"
+  >
+    <h1
+      class="ui-text color-base size-36px"
+      data-test-id="notFoundMessage"
+    >
+      Page is not Found
+    </h1>
+    <img
+      alt="Page not Found"
+      src="https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-5529.jpg"
+    />
+  </div>
+</DocumentFragment>
+`;
