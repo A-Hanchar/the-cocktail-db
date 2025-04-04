@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button.Outline /> SHOULD match snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="button"
+    data-test-id="button-outline"
+    type="button"
+  >
+    Button
+  </button>
+</DocumentFragment>
+`;

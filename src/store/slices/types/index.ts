@@ -1,0 +1,6 @@
+export enum ASYNC_STATUS {
+	IDLE = 'IDLE',
+	PENDING = 'PENDING',
+	SUCCEEDED = 'SUCCEEDED',
+	FAILED = 'FAILED',
+}
